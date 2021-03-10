@@ -33,6 +33,12 @@ void (*func)(int))
 	}
 }
 
+/**
+ * binary_tree_levelorder - prints every level of the tree
+ * @tree: root of the node
+ * @func: function to run in node
+ */
+
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	size_t level = 0, i = 0;
