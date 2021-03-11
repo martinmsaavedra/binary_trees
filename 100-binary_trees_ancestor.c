@@ -26,6 +26,7 @@ size_t binary_tree_depth(const binary_tree_t *tree)
   * @second: pointer to node
   * Return: Ancestor
   */
+
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 const binary_tree_t *second)
 {
@@ -35,6 +36,9 @@ const binary_tree_t *second)
 
 	if (!first || !second)
 		return (NULL);
+	
+	if (first == second)
+		return (binary_tree_t *)first;
 
 	if (node_F->parent == node_S)
 	{
